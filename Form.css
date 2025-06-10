@@ -85,12 +85,9 @@ body {
 }
 
 .btn:hover {
-  background-color: #3367d6;
-}
-
-.btn:hover {
   background: linear-gradient(45deg, greenyellow, dodgerblue);
   cursor: pointer;
   transition: 0.4s;
   transform: translateY(-2px);
+  background-color: #3367d6;
 }

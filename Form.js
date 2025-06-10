@@ -1,7 +1,7 @@
 const form = document.querySelector(".form");
 const container = document.querySelector(".container");
 
-// Создаем элемент изображения (изначально скрыт)
+// Создаем элемент
 const img = document.createElement("img");
 img.src = "https://support.songtradr.com/hc/article_attachments/115010619108";
 img.alt = "Success image";
@@ -14,7 +14,6 @@ img.style.cursor = "pointer";
 // Добавляем изображение в контейнер
 container.appendChild(img);
 
-// Обработчик отправки формы
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -25,15 +24,11 @@ form.addEventListener("submit", function (e) {
     // Показываем изображение
     img.style.display = "block";
 
-    // Очищаем форму
     form.reset();
-
-    // Прокручиваем к изображению
     img.scrollIntoView({ behavior: "smooth" });
   }
 });
 
-// Обработчик клика по изображению (удаление)
 img.addEventListener("click", function () {
   img.style.display = "none";
 });
